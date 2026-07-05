@@ -103,7 +103,65 @@ AI-Neighborhood-Exchange/
 ├── output/
 └── README.md
 ```
+```mermaid
+flowchart TB
 
+    User([👤 User])
+
+    subgraph Frontend["Frontend (React.js + Vite)"]
+        UI[React Components]
+        Router[React Router]
+        Axios[Axios Services]
+    end
+
+    subgraph Backend["Backend (FastAPI)"]
+        API[REST API Endpoints]
+        Auth[JWT Authentication]
+        ItemService[Item Service]
+        ExchangeService[Exchange Service]
+        AIService[Gemini AI Service]
+    end
+
+    subgraph Database["MongoDB Atlas"]
+        Users[(Users Collection)]
+        Items[(Items Collection)]
+        Exchanges[(Exchange Requests)]
+    end
+
+    subgraph ExternalServices["External Services"]
+        Gemini[Google Gemini AI]
+        Cloudinary[Cloudinary Image Storage]
+    end
+
+    User --> UI
+    UI --> Router
+    Router --> Axios
+
+    Axios --> API
+
+    API --> Auth
+    API --> ItemService
+    API --> ExchangeService
+    API --> AIService
+
+    Auth --> Users
+
+    ItemService --> Items
+    ExchangeService --> Exchanges
+
+    ItemService --> Cloudinary
+    AIService --> Gemini
+
+    Cloudinary --> ItemService
+    Gemini --> AIService
+
+    ItemService --> API
+    ExchangeService --> API
+    AIService --> API
+
+    API --> Axios
+    Axios --> UI
+```
 ---
 
 # ⚙️ Installation
