@@ -252,45 +252,6 @@ Features
 - Fast Upload
 - Automatic Image URL Generation
 
----
-
-# 📷 Application Screenshots
-
-## Home Page
-
-> *(Add screenshot here)*
-
----
-
-## Browse Items
-
-> *(Add screenshot here)*
-
----
-
-## Create Item
-
-> *(Add screenshot here)*
-
----
-
-## AI Generated Description
-
-> *(Add screenshot here)*
-
----
-
-## Image Upload
-
-> *(Add screenshot here)*
-
----
-
-## Exchange Requests
-
-> *(Add screenshot here)*
-
----
 
 # 🔮 Future Enhancements
 
@@ -328,5 +289,3 @@ This project helped in gaining hands-on experience with:
 
 **Shreevalli Gundal**
 
-
-## ⭐ If you found this project useful, consider giving it a star!
