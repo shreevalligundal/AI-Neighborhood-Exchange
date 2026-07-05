@@ -273,7 +273,93 @@ VITE_API_BASE_URL=http://127.0.0.1:8000
 VITE_CLOUDINARY_CLOUD_NAME=your_cloud_name
 VITE_CLOUDINARY_UPLOAD_PRESET=your_upload_preset
 ```
+# ▶️ Running the Project
 
+After completing the installation, open **two separate terminals**.
+
+---
+
+## 🖥️ Terminal 1 — Backend
+
+Navigate to the backend directory:
+
+```bash
+cd backend
+```
+
+Activate the virtual environment
+
+### Windows
+
+```bash
+venv\Scripts\activate
+```
+
+### macOS/Linux
+
+```bash
+source venv/bin/activate
+```
+
+Start the FastAPI server:
+
+```bash
+uvicorn app.main:app --reload
+```
+
+Backend will be available at:
+
+```
+http://127.0.0.1:8000
+```
+
+Swagger API Documentation:
+
+```
+http://127.0.0.1:8000/docs
+```
+
+---
+
+## 💻 Terminal 2 — Frontend
+
+Navigate to the frontend directory:
+
+```bash
+cd frontend
+```
+
+Install dependencies (first time only):
+
+```bash
+npm install
+```
+
+Start the React development server:
+
+```bash
+npm run dev
+```
+
+Frontend will be available at:
+
+```
+http://localhost:5173
+```
+
+---
+
+## ✅ Verify the Application
+
+Once both servers are running, you can:
+
+- Register a new account
+- Login securely
+- Create a new item
+- Upload an item image
+- Generate AI-powered descriptions
+- Browse available items
+- Send and manage exchange requests
 ---
 
 # 🤖 AI Description Generator
